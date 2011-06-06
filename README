@@ -1,0 +1,25 @@
+5 March 2002
+
+compiled with GNU Make version 3.77,
+
+gcc version egcs-2.91.66 19990314/Linux (egcs-1.1.2 release)
+
+but it should not matter much.  
+
+The file Depend must be present for make to run,
+"touch Depend" and "make depend" will bring it up to date
+(it is up to date at the moment).
+
+The most important thing is the presence of the GNU
+GMP library (GNU multiple precision arithmetic).
+If this does not work, I have an independent implementation
+as well.  Please send email to 
+stengel@maths.lse.ac.uk
+
+--
+
+Dr Bernhard von Stengel           email: stengel@maths.lse.ac.uk
+Department of Mathematics         http://www.maths.lse.ac.uk/Personal/stengel
+London School of Economics        phone: +44-20-7955 6438  (office)
+Houghton St, Room B408                   +44-20-7713 8075  (home)
+London WC2A 2AE, United Kingdom   fax  : +44-20-7955 6877

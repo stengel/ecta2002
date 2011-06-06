@@ -1,0 +1,24 @@
+alloc.o: alloc.c alloc.h
+col.o: col.c col.h
+mp.o: mp.c mp.h
+rat.o: rat.c rat.h mp.h
+lemke.o: lemke.c alloc.h col.h rat.h lemke.h mp.h
+inlemke.o: inlemke.c alloc.h col.h rat.h lemke.h
+leaves.o: leaves.c rat.h treedef.h seqform.h sfnf.h leaves.h
+prior.o: prior.c prior.h rat.h rataux.h treedef.h sfnf.h seqform.h
+rataux.o: rataux.c rat.h rataux.h
+sfnf.o: sfnf.c alloc.h rat.h rataux.h lemke.h treedef.h seqform.h \
+  normform.h rsf.h sfnf.h
+treegen.o: treegen.c rat.h treedef.h treegen.h
+treedef.o: treedef.c alloc.h col.h rat.h treedef.h
+normform.o: normform.c alloc.h col.h rat.h lemke.h mp.h treedef.h sfnf.h \
+  normform.h
+seqform.o: seqform.c alloc.h col.h rat.h lemke.h treedef.h sfnf.h \
+  seqform.h
+rsf.o: rsf.c alloc.h col.h rat.h lemke.h treedef.h sfnf.h seqform.h
+main.o: main.c getopt.h alloc.h rat.h lemke.h mp.h treedef.h treegen.h \
+  sfnf.h seqform.h normform.h prior.h leaves.h gambit.h interface.h
+gambit.o: gambit.c rat.h treedef.h lemke.h seqform.h gambit.h
+interface.o: interface.c rat.h treedef.h normform.h seqform.h interface.h
+gmpwrap.o: gmpwrap.c gmp.h gmpwrap.h
+glemke.o: glemke.c alloc.h col.h rat.h lemke.h gmp.h gmpwrap.h
